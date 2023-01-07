@@ -39,6 +39,7 @@ const SummaryDiv = styled.div`
   height: 7rem;
   letter-spacing: 0.5px;
   line-height: 1.3rem;
+  border-radius: 10px;
 `;
 
 const PostBox = styled.div`
@@ -48,6 +49,13 @@ const PostBox = styled.div`
   overflow: hidden;
   background-color: white;
   text-decoration: none;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px #dec4a3;
+
+  &:hover{
+    transform: translateY(-5px);
+    transition: transform 0.7s ease;
+    box-shadow: 3px 5px 9px #dec4a3;  }
 `;
 const PostSummary = styled.div`
   text-decoration: none;
@@ -72,7 +80,7 @@ const PostSummary = styled.div`
   }
   &:hover {
     transform: translateY(-17.21rem);
-    transition: transform 0.5s ease;
+    transition: transform 0.7s ease;
     & > h3 {
       padding-top: 2.5rem;
       padding-bottom: 1rem;

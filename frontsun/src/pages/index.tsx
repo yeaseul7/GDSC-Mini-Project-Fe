@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { BsSearch } from "react-icons/bs";
 import Main from "../components/Main";
+import Link from "next/link";
+
 
 export default function Home() {
   return (
@@ -12,8 +14,8 @@ export default function Home() {
           </SearchIconBox>
         </SearchBox>
         <LoginBox>
-          <div>Login</div>
-          <div>Sign in</div>
+          <Link href="/login">Login</Link>
+          <Link href="/signup">Sign in</Link>
         </LoginBox>
       </HomeNavBox>
       
